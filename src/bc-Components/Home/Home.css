@@ -1,0 +1,264 @@
+/* Base Layout */
+.AdminDash-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+  margin-left: 80px;
+}
+
+.AdminDash-welcome {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Top Cards */
+.AdminDash-top-cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.AdminDash-card {
+  flex: 1;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.AdminDash-card-purple {
+  background-color: #6d28d9;
+  color: white;
+  position: relative; /* Enable z-index control */
+  z-index: 0; /* Use a value appropriate to its context */
+}
+
+.AdminDash-card-gray {
+  background-color: #e5e7eb;
+  color: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AdminDash-card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.AdminDash-card-value {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.AdminDash-card-title-gray {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: bold;
+}
+
+.AdminDash-card-value-dark {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.AdminDash-card-img,
+.AdminDash-icon {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+/* Middle Section */
+.AdminDash-middle {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.AdminDash-monthly, .AdminDash-mmr {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.AdminDash-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AdminDash-icon-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.AdminDash-revenue-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.AdminDash-muted {
+  color: #9ca3af;
+  margin-right: 0.5rem;
+}
+
+.AdminDash-badge {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.AdminDash-badge.up {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.AdminDash-badge.down {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.AdminDash-chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  height: 150px;
+}
+
+.AdminDash-bar-group {
+  text-align: center;
+}
+
+.AdminDash-bar {
+  background: #d1d5db;
+  width: 16px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.AdminDash-bar.highlight {
+  background-color: #9333ea;
+  height: 100%;
+}
+
+.AdminDash-bar.h1 { height: 20%; }
+.AdminDash-bar.h2 { height: 30%; }
+.AdminDash-bar.h3 { height: 40%; }
+.AdminDash-bar.h4 { height: 50%; }
+.AdminDash-bar.h5 { height: 60%; }
+.AdminDash-bar.h6 { height: 70%; }
+.AdminDash-bar.h7 { height: 80%; }
+.AdminDash-bar.h8 { height: 90%; }
+.AdminDash-bar.h9 { height: 65%; }
+.AdminDash-bar.h10 { height: 75%; }
+
+/* MMR Section */
+.AdminDash-circles {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.AdminDash-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.AdminDash-circle.blue { background: #3b82f6; }
+.AdminDash-circle.purple { background: #9333ea; }
+.AdminDash-circle.gray { background: #d1d5db; }
+
+.AdminDash-mmr-info {
+  margin-top: 1rem;
+}
+
+.AdminDash-mmr-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.AdminDash-mini-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.AdminDash-mini-circle.blue { background: #3b82f6; }
+.AdminDash-mini-circle.purple { background: #9333ea; }
+.AdminDash-mini-circle.gray { background: #d1d5db; }
+
+.AdminDash-muted-sm {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* Orders Section */
+.AdminDash-orders {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.AdminDash-filter-btn {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.AdminDash-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.AdminDash-table th, .AdminDash-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.AdminDash-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.AdminDash-user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.AdminDash-status {
+  display: inline-block;
+  background-color: #fef08a;
+  color: #92400e;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}

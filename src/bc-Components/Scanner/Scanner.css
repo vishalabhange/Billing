@@ -1,0 +1,142 @@
+
+.Scanner {
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.Scanner-card {
+  width: 720px;
+  max-width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Scanner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.Scanner-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Scanner-sub {
+  font-size: 12px;
+  color: #666;
+}
+
+.Scanner-view {
+  position: relative;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.Scanner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.Scanner-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.Scanner-overlay-box {
+  width: 70%;
+  height: 55%;
+  border: 2px dashed rgba(255,255,255,0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.14);
+}
+
+.Scanner-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Scanner-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Scanner-label {
+  min-width: 80px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Scanner-select {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.Scanner-button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Scanner-button:hover { filter: brightness(0.95); }
+
+.Scanner-file {
+  flex: 1;
+}
+
+.result-row { align-items: flex-start; }
+
+.Scanner-result-label { min-width: 80px; font-weight: 700; }
+
+.Scanner-result {
+  flex: 1;
+  word-break: break-word;
+  background: #f8f9fb;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  font-size: 13px;
+}
+
+.Scanner-error {
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.Scanner-hint {
+  font-size: 12px;
+  color: #666;
+}
+
+.muted { color: #9aa0a6; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .Scanner-card { padding: 10px; }
+  .Scanner-title { font-size: 16px; }
+  .Scanner-overlay-box { width: 85%; height: 50%; }
+}

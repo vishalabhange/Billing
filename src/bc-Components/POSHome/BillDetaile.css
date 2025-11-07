@@ -1,0 +1,137 @@
+.bill-detail-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  color: #333;
+  line-height: 1.6;
+}
+
+.loading-text,
+.error-text {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  color: #888;
+}
+
+.bill-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bill-header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.bill-header p {
+  font-size: 16px;
+  color: #4b5563;
+  margin: 5px 0;
+}
+
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 16px;
+}
+
+.bill-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+}
+
+.bill-total-row td {
+  background-color: #f3f4f6;
+  font-size: 18px;
+  font-weight: bold;
+  color: #111827;
+  border-top: 2px solid #d1d5db;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.footer-note {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
+  .bill-detail-container {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-note {
+    display: none;
+  }
+
+  .loading-text,
+  .error-text {
+    display: none;
+  }
+}
+
+.update-controls-container {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.update-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+}
+
+.update-box select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.status-update-btn {
+  padding: 6px 12px;
+  background-color: #00ff80;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.status-update-btn:hover {
+  background-color: #24b300;
+}

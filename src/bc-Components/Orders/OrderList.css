@@ -1,0 +1,275 @@
+.OrderList {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.OrderList-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+/* Filter bar */
+.OrderList-filter-bar {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.filter-group.search-full input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.filter-group.search-full input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Date filter buttons */
+.OrderList-date-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.date-filter-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.date-filter-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Filters + actions */
+.OrderList-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.OrderList-filters {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-group select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.OrderList-refresh-btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.OrderList-refresh-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Table */
+.OrderList-table-wrapper {
+  overflow-x: auto;
+}
+
+.OrderList-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.OrderList-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+  padding: 12px;
+  text-align: left;
+  color: #374151;
+}
+
+.OrderList-table td {
+  background: white;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.OrderList-table tbody tr {
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.OrderList-table tbody tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Badges */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-pending { background: #fef3c7; color: #92400e; }
+.status-complete { background: #d1fae5; color: #065f46; }
+.status-hold { background: #fee2e2; color: #991b1b; }
+
+.ordertype-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  background: #e0e7ff;
+  color: #4338ca;
+  font-weight: 600;
+}
+
+/* Mobile cards */
+.OrderList-cards {
+  display: none;
+}
+
+.order-card {
+  background: white;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.card-row .label {
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Empty */
+.no-orders,
+.orders-error,
+.orders-loading {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .OrderList-table-wrapper { display: none; }
+  .OrderList-cards { display: block; }
+}
+
+.OrderList-dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.OrderList-chart-box,
+.OrderList-financial-box {
+  flex: 1 1 45%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.OrderList-chart-box h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.OrderList-financial-box h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.OrderList-financial-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.OrderList-total-box h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.OrderList-total-box .total-amount {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #111;
+}
+
+/* Horizontal Summary Card */
+.OrderList-summary-horizontal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 10px;
+  margin: 25px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.summary-item {
+  text-align: center;
+  flex: 1 1 150px; /* Allows wrapping on small screens */
+  margin: 10px;
+}
+
+.summary-item h4 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.summary-item p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Optional color coding by position */
+.summary-item:nth-child(1) p { color: #1abc9c; }   /* Total Orders */
+.summary-item:nth-child(2) p { color: #3498db; }   /* Today */
+.summary-item:nth-child(3) p { color: #f39c12; }   /* Pending */
+.summary-item:nth-child(4) p { color: #2ecc71; }   /* Completed */
+.summary-item:nth-child(5) p { color: #e74c3c; }   /* Hold */

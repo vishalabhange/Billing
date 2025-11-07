@@ -1,0 +1,90 @@
+/* === Professional Top Navbar === */
+.POS-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.POS-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.POS-logo-img {
+  width: 32px;
+  height: 32px;
+}
+
+.POS-logo-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2a9d8f;
+}
+
+/* Navigation */
+.POS-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.POS-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.POS-nav-item:hover,
+.POS-nav-item.active {
+  color: #2a9d8f;
+  /* font-weight: 600; */
+  text-decoration: underline;
+}
+
+.POS-datetime {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;        /* balanced readable size */
+  font-weight: 500;          /* medium weight for clarity */
+  color: #374151;            /* neutral dark gray */
+  background: #f9fafb;       /* soft background */
+  padding: 6px 12px;         /* breathing space */
+  border-radius: 6px;        /* smooth edges */
+  border: 1px solid #e5e7eb; /* subtle border */
+  display: inline-block;     
+  letter-spacing: 0.5px;
+}
+
+/* Logout button */
+.POS-logout {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.POS-logout:hover {
+  background: #dc2626;
+}

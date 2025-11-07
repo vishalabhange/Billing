@@ -1,0 +1,13 @@
+/* Full-page image container */
+.welcome-container {
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  overflow: hidden;
+}
+
+/* Full image styling */
+.welcome-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* image fills container completely */
+}

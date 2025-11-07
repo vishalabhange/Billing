@@ -1,0 +1,23 @@
+.alert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .alert-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .alert-box h2 {
+    color: #f00;
+  }
+  
+  .alert-box p {
+    margin: 10px 0;
+  }
+  

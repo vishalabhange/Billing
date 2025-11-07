@@ -1,0 +1,46 @@
+.POS-sidebar {
+  width: 100%;
+  max-width: 16rem;
+  padding: 1.5rem;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+}
+
+.sidebar-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.barcode-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #f3f4f6;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.barcode-info {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.product-placeholder {
+  padding: 1rem;
+  border: 1px dashed #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.placeholder-img {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}

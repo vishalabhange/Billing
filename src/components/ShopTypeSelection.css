@@ -1,0 +1,86 @@
+.ShopTypeSel-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f9f9fb;
+}
+
+.ShopTypeSel-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ShopTypeSel-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.ShopTypeSel-header p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.ShopTypeSel-error {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.ShopTypeSel-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ShopTypeSel-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.ShopTypeSel-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ShopTypeSel-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.ShopTypeSel-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.ShopTypeSel-button:disabled {
+  background-color: #a4c0e0;
+  cursor: not-allowed;
+}
+
+.ShopTypeSel-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.ShopTypeSel-footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
